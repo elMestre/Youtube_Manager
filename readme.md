@@ -14,6 +14,7 @@ Author
 
 *	[https://github.com/carmesce](https://github.com/carmesce)
 *	[https://twitter.com/carmesce](https://twitter.com/carmesce)
+
 GPL License
 ---------------------
 *	[GPL license](./gpl.txt)
