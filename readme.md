@@ -8,9 +8,9 @@ You can use it if find it uselful
 
 ##Author
 **Carlos Mestre**
--[https://github.com/carmesce](https://github.com/carmesce)
--[https://twitter.com/carmesce](https://twitter.com/carmesce)
+*[https://github.com/carmesce](https://github.com/carmesce)
+*[https://twitter.com/carmesce](https://twitter.com/carmesce)
 
 
 ##GPL License
--[GPL license](./gpl.txt)
+*[GPL license](./gpl.txt)
