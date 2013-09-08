@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Youtube Manager</title>
+  <style>
+
+
+/*IE only style_ie.css*/
+
+
+* html #wrapper,
+* html #footer {
+  width: expression((documentElement.clientWidth||document.body.clientWidth)<640?'640px':'');
+}
+
+  body {
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    moz-box-sizing: border-box; /* Firefox, other Gecko */
+    box-sizing: border-box; /* Opera/IE 8+ */
+    margin: 0;
+    padding: 0;
+  }
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  height: 100%;
+}
+header, nav, section, article, aside, footer {
+  display: block;
+}
+body {
+  font: 1rem Arial, Tahoma, Verdana, sans-serif;
+  height: 100%;
+}
+a {
+  color: blue;
+  outline: none;
+  text-decoration: underline;
+}
+a:hover {
+  text-decoration: none;
+}
+p {
+  margin: 0 0 18px
+}
+
+h1 {
+  font-size: 600%;
+  margin: 0 400px;
+}
+
+img {
+  border: none;
+}
+input {
+  vertical-align: middle;
+}
+#wrapper {
+  min-width: 640px;
+  max-width: 4000px;
+  margin: 0 auto;
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+}
+
+.areatext {  
+  font-size: 300%;
+  color: #999;
+}
+
+
+
+/* Header
+-----------------------------------------------------------------------------*/
+#header {
+  height: 10rem;
+  /*height: 1%;*/
+  width: 100%;
+  padding: 0;
+  text-align: center;
+/*  border: solid 2px #777;*/
+/*  background-color: #00f;*/
+}
+
+#header:after{
+  content: '';
+  clear: both;
+  display: table;
+}
+
+#sessionmanager {
+  font-size: 300%;
+  color: #ccc;
+  float: right;
+  background: #FFACAA;
+}
+
+  #sessionmanager>ul>li {
+    list-style: none;
+  }
+
+  .sessionbut {
+    height: 4rem;
+    width: 17rem;
+    border: solid 2px #000;
+    background-color: #666;
+    }
+      .sessionbut>span {
+        position: relative;
+        top:0.4rem;
+      }
+
+/* Middle
+-----------------------------------------------------------------------------*/
+#middle {
+  width: 100%;
+  padding: 1rem 0 2rem;
+  height: 1%;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  background: #BFF08E;
+}
+#middle:after {
+  content: '';
+  clear: both;
+  display: table;
+}
+#container {
+  width: 100%;
+  float: left;
+  overflow: hidden;
+}
+#content {
+  padding: 0 270px 0 270px;
+}
+
+/* Sidebars
+-----------------------------------------------------------------------------*/
+
+#sideLeft,#sideRight {
+    transform: rotate(90deg) translate(300px);
+    -webkit-transform: rotate(90deg) translate(300px);
+    -moz-transform: rotate(90deg) translate(300px);
+    -o-transform: rotate(90deg) translate(300px);
+    -ms-transform: rotate(90deg) translate(300px);
+  }
+
+#sideLeft {
+  float: left;
+  width: 20rem;
+  position: absolute;
+  height: 100%;
+  margin-left: -100%;
+  position: relative;
+}
+
+#sideRight {
+  float: left;
+  margin-right: -3px;
+  width: 15rem;
+  margin-left: -250px;
+  position: relative;
+/*  background: #FFACAA;
+  border: 6px dotted green;*/
+}
+
+
+/* Footer
+-----------------------------------------------------------------------------*/
+#footer {
+  margin: -100px auto 0;
+  min-width: 640px;
+  max-width: 4000px;
+  height: 100px;
+  position: relative;
+  text-align: center;
+/*  background: #BFF08E;
+  border: solid 2px #777;*/
+}
+#footer>h2 {
+  position: relative;
+  top: 2rem;
+}
+
+  </style>
+</head>
+<body>
+  
+
+
+<div id="wrapper">
+
+  <header id="header">
+
+    <aside id="sessionmanager">
+      <ul>
+        <li><div class="sessionbut"><span>ENTRA</span></div></li>
+      </ul>
+    </aside>
+    <h1>Youtube Manager</h1>    
+    <h2 class="areatext">HEADER</h2>
+  </header>
+
+
+  <section id="middle">
+    <div id="container">
+      <div id="content">
+        <div class="video_area">
+        <object width="1066" height="600">
+          <param name="movie" value="//www.youtube-nocookie.com/v/kPRA0W1kECg?hl=en_US&amp;version=3"></param>
+          <param name="allowFullScreen" value="true"></param>
+          <param name="allowscriptaccess" value="always"></param>
+          <embed src="//www.youtube-nocookie.com/v/kPRA0W1kECg?hl=en_US&amp;version=3" 
+                type="application/x-shockwave-flash" 
+                width="1066" 
+                height="600" 
+                transcriptional="always" 
+                allowfullscreen="true">
+          </embed>
+        </object>
+        </div>
+
+        <select>
+          <option value="alpha">alpha</option>
+          <option value="beta">beta</option>
+          <option value="gamma">gamma</option>
+          <option value="delta">delta</option>
+        </select>
+
+      </div><!-- #content-->
+    </div><!-- #container-->
+
+    <aside id="sideLeft">
+      <h2 class="areatext">
+        IZQUIERDA
+      </h2>
+    </aside><!-- #sideLeft -->
+
+    <aside id="sideRight">
+      <h2 class="areatext">
+        DERECHA
+      </h2>
+    </aside><!-- #sideRight -->
+
+  </section><!-- #middle-->
+
+</div><!-- #wrapper -->
+
+<footer id="footer">
+      <h2 class="areatext">
+        FOOTER
+      </h2>
+</footer><!-- #footer -->
+
+
+
+</body>
+</html>
